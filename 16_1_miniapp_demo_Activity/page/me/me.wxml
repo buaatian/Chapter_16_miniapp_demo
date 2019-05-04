@@ -1,0 +1,26 @@
+<view class="wx-view_JbWxfk" data-c_e_id="wx_view36a5f58d">
+    <view class="carditem01" data-c_e_id="wx_view2f47d002">
+        <view catchtap="myInfo" class="wx-view_QvvUkU" data-c_act_id="M_cc1a73bfd62090d2" data-c_e_id="wx_view9a26c020">
+            <navigator class="wx-navigator_rv4BGW" data-c_e_id="wx_navigator3a0627f6" hover-class="navigator-hover">
+                <image class="wx-image_tBcdCT" data-c_e_id="wx_image9a4b5d06" mode="aspectFill" src="{{avatarUrl}}" style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url({{avatarUrl}}); "/>
+                <view class="wx-view_cPj0ok" data-c_e_id="wx_viewe7d22733">
+                    <text class="c-block wx-text_TvHPc9" data-c_e_id="wx_textc242c6b3">{{nickName}}</text>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</view>
+<view class="weui-panel_access" data-c_e_id="wx_viewdb8fc1b3">
+    <view class="weui-panel__bd" data-c_e_id="wx_view06e5199c">
+        <view catchtap="tap_2a2bfd41" class="weui-media-box_appmsg" data-c_act_id="M_9ddaba8c015b4bb0" data-c_e_id="wx_view4851235f">
+            <view class="weui-media-box__bd" data-c_e_id="wx_viewe83dee3a">
+                <text class="c-block weui-media-box__title2" data-c_e_id="wx_text68da5937">我参加的活动</text>
+            </view>
+        </view>
+        <view catchtap="tap_9288a821" class="top weui-media-box_appmsg" data-c_act_id="M_5443031abb3fe92b" data-c_e_id="wx_viewbfe4c3f5">
+            <view class="weui-media-box__bd" data-c_e_id="wx_viewccadb6b5">
+                <text class="c-block weui-media-box__title2" data-c_e_id="wx_textec7b7e9d">我发布的活动</text>
+            </view>
+        </view>
+    </view>
+</view>

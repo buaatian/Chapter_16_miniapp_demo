@@ -1,0 +1,8 @@
+{
+  "navigationBarTextStyle": "white", 
+  "navigationBarBackgroundColor": "#000000", 
+  "navigationBarTitleText": "发起新活动", 
+  "backgroundColor": "#efefef", 
+  "enablePullDownRefresh": false, 
+  "backgroundTextStyle": "dark"
+}

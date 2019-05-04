@@ -1,0 +1,32 @@
+<view class="item itemTop">
+  <label class="item-title">帐号</label>
+  <view class="item-input">{{userInfo.userId}}</view>
+</view>
+<view class="item">
+  <label for="name" class="item-title">昵称</label>
+  <input id="name" class="item-input" maxlength="20" type="text" value='{{userInfo.userName}}' bindblur="saveName" />
+</view>
+<view class="item">
+  <label for="age" class="item-title">年龄</label>
+  <input id="age" class="item-input" maxlength="10" type="number" value='{{userInfo.age}}' bindblur="saveAge" />
+</view>
+<view class="item">
+  <label for="city" class="item-title">所在城市</label>
+  <input id="city" class="item-input" maxlength="30" type="text" value='{{userInfo.city}}' bindblur="saveCity" />
+</view>
+<view class="item">
+  <label class="item-title">性别</label>
+  <radio-group bindchange="saveSex">
+    <radio value="m" checked='{{userInfo.sex=="m"}}' />男
+    <radio value="f" checked='{{userInfo.sex=="f"}}' />女
+  </radio-group>
+</view>
+<view class="item">
+  <label for="newPwd" class="item-title">新密码</label>
+  <input id="newPwd" class="item-input" maxlength="20" type="password" bindblur="savePwd"/>
+</view>
+<view class="item">
+  <label for="newPwdConfirm" class="item-title">确认密码</label>
+  <input id="newPwdConfirm" class="item-input" maxlength="20" type="password" bindblur="saveRePwd"/>
+</view>
+<button bindtap="saveChange">确认修改</button>

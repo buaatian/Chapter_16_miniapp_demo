@@ -1,0 +1,96 @@
+<form class="c-minheight wx-form_oNJdHv" data-c_e_id="wx_form_448167db">
+<block wx:if = "{{status > 0}}">
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view_7cf0f539">
+        <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_view_5c1eb18b">
+            <text class="c-block wx-text_mQdsma" data-c_e_id="wx_text_856a5820">姓名</text>
+        </view>
+        <view class="c-minheight wx-view_9oEnfO" data-c_e_id="wx_view_b1703cb6">
+            <text class="c-block wx-text_aVGJJz" data-c_e_id="wx_text_78ead76c">{{name}}</text>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_viewe7848b4f">
+        <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_viewf2f7d0ad">
+            <text class="c-block wx-text_mQdsma" data-c_e_id="wx_textbd3cabf7">联系方式</text>
+        </view>
+        <view class="c-minheight wx-view_9oEnfO" data-c_e_id="wx_view9ea04976">
+            <text class="c-block wx-text_aVGJJz" data-c_e_id="wx_text8c118eb5">{{phoneNum}}</text>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_viewd5cf9c5f">
+        <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_viewc773dbc5">
+            <text class="c-block wx-text_mQdsma" data-c_e_id="wx_textd5aadef6">状态</text>
+        </view>
+        <view class="c-minheight wx-view_9oEnfO" data-c_e_id="wx_viewdc738980">
+            <text class="c-block wx-text_aVGJJz" data-c_e_id="wx_textedfaec9f">已通过</text>
+        </view>
+    </view>
+    <text class="c-block wx-text_eGC0dm" data-c_e_id="wx_text_909e003a">补充说明</text>
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view7e0c3f1b">
+        <textarea class="c-block c-fullwidth wx-textarea_nF21Qs" data-c_e_id="wx_textarea_329a1a81" disabled="true" name="textarea1" placeholder="其余需要说明的事项" type="textarea" value="{{others}}"/>
+    </view>
+    <view hidden="{{fee>0?false:true}}" class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view804051a2">
+        <view class="page-body-info">
+            <block wx:if="{{imageSrc}}">
+                <view class="image-plus-text">请扫描二维码向活动发起人支付{{fee}}元</view>
+                <image src="{{imageSrc}}" bindlongtap="saveImage" class="image" mode="aspectFit"></image>
+                <view class="image-plus-text">长按图片可保存到本地</view>
+            </block>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_UpQe8h" data-c_e_id="wx_view_dc309cc4">
+        <button class="wx-button_LcidkE" data-c_e_id="wx_button_02cb4df9" catchtap="deleteSignUpInfo" data-acid="{{acId}}" hover-class="button-hover" size="default" type="warn">
+            取消报名
+        </button>
+    </view>
+</block>
+<block wx:else>
+<view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view_7cf0f539">
+        <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_view_5c1eb18b">
+            <text class="c-block wx-text_mQdsma" style="color:#a8a8a8" data-c_e_id="wx_text_856a5820">姓名</text>
+        </view>
+        <view class="c-minheight wx-view_9oEnfO" data-c_e_id="wx_view_b1703cb6">
+            <text class="c-block wx-text_aVGJJz" style="color:#a8a8a8" data-c_e_id="wx_text_78ead76c">{{name}}</text>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_viewe7848b4f">
+        <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_viewf2f7d0ad">
+            <text class="c-block wx-text_mQdsma" style="color:#a8a8a8" data-c_e_id="wx_textbd3cabf7">联系方式</text>
+        </view>
+        <view class="c-minheight wx-view_9oEnfO" data-c_e_id="wx_view9ea04976">
+            <text class="c-block wx-text_aVGJJz" style="color:#a8a8a8" data-c_e_id="wx_text8c118eb5">{{phoneNum}}</text>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_viewd5cf9c5f">
+        <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_viewc773dbc5">
+            <text class="c-block wx-text_mQdsma" style="color:#a8a8a8" data-c_e_id="wx_textd5aadef6">状态</text>
+        </view>
+        <view class="c-minheight wx-view_9oEnfO" data-c_e_id="wx_viewdc738980">
+            <text class="c-block wx-text_aVGJJz" style="color:#a8a8a8" data-c_e_id="wx_textedfaec9f">您的报名已被活动创建人取消</text>
+        </view>
+    </view>
+    <text class="c-block wx-text_eGC0dm" style="color:#a8a8a8" data-c_e_id="wx_text_909e003a">补充说明</text>
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view7e0c3f1b">
+        <textarea class="c-block c-fullwidth wx-textarea_nF21Qs" data-c_e_id="wx_textarea_329a1a81" disabled="true" name="textarea1" placeholder="其余需要说明的事项" type="textarea" style="color:#a8a8a8" value="{{others}}"/>
+    </view>
+    <view hidden="{{fee>0?false:true}}" class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view804051a2">
+        <view class="page-body-info">
+            <block wx:if="{{imageSrc}}">
+                <view class="image-plus-text">请扫描二维码向活动发起人支付{{fee}}元</view>
+                <image src="{{imageSrc}}" bindlongtap="saveImage" class="image" mode="aspectFit"></image>
+                <view class="image-plus-text">长按图片可保存到本地</view>
+            </block>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_UpQe8h" data-c_e_id="wx_view_dc309cc4">
+         <!-- <button class="wx-button_LcidkE" data-c_e_id="wx_button_02cb4df9" formType="submit" hover-class="button-hover" size="default" type="warn">
+            关闭此页面后，您将不会再从首页看到该活动的记录
+        </button>  -->
+        <view class="page-body-info-my">
+            <view class="image-plus-text">关闭此页面后，您的首页将不会再显示这次活动。</view>
+            <view class="image-plus-text">如有需要，请截图保存本页面。</view>
+            <view class="image-plus-text-my">如有疑问，请联系</view>
+            <view class="image-plus-text-my-blue" catchtap="makePhoneCall">{{creatorName}} {{creatorPhoneNum}}</view>
+        </view>
+    </view>
+</block>
+</form>

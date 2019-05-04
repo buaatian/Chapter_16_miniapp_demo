@@ -1,0 +1,8 @@
+{
+  "navigationBarTextStyle": "white", 
+  "navigationBarBackgroundColor": "#000000", 
+  "navigationBarTitleText": "报名人列表", 
+  "backgroundColor": "#efefef", 
+  "enablePullDownRefresh": true, 
+  "backgroundTextStyle": "dark"
+}

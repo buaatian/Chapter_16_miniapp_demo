@@ -1,0 +1,52 @@
+{
+  "debug": true, 
+  "window": {
+    "navigationBarTextStyle": "white", 
+    "navigationBarBackgroundColor": "#000000", 
+    "navigationBarTitleText": "\u5fae\u6d3b\u52a8\u62a5\u540d\u52a9\u624b", 
+    "backgroundColor": "#efefef", 
+    "enablePullDownRefresh": false, 
+    "backgroundTextStyle": "dark"
+  }, 
+  "pages": [
+    "page/index/index", 
+    "page/showmysignupinfo/showmysignupinfo", 
+    "page/me/me", 
+    "page/myinfo/myinfo", 
+    "page/myactivity/myactivity", 
+    "page/newactivity/newactivity", 
+    "page/shareactivity/shareactivity", 
+    "page/signup/signup", 
+    "page/editactivity/editactivity", 
+    "page/showsignuplist/showsignuplist", 
+    "page/showsignupinfo/showsignupinfo", 
+    "page/showposition/showposition"
+  ], 
+  "tabBar": {
+    "color": "#bfbfbf", 
+    "selectedColor": "#000000", 
+    "list": [
+      {
+        "text": "活动", 
+        "pagePath": "page/index/index", 
+        "iconPath": "resources/e6d1234fc183db636e41c538ea810c7a.png", 
+        "selectedIconPath": "resources/31b417dea179eed25dda1ec751ea6185.png"
+      }, 
+      {
+        "text": "我的", 
+        "pagePath": "page/me/me", 
+        "iconPath": "resources/7315078ed034960b699002ab177bc15b.png", 
+        "selectedIconPath": "resources/c099422cde2878c9709a6d6472365a50.png"
+      }
+    ], 
+    "backgroundColor": "#ffffff", 
+    "position": "bottom", 
+    "borderStyle": "black"
+  }, 
+  "networkTimeout": {
+    "connectSocket": "", 
+    "request": 3000, 
+    "downloadFile": "", 
+    "uploadFile": ""
+  }
+}

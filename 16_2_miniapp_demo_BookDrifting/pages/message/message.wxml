@@ -1,0 +1,19 @@
+<!--message.wxml-->
+<block wx:if="{{news.length>0}}">
+  <view wx:for-items="{{news}}" wx:for-item="item" wx:key="{{index}}" class="item">
+    <view class="itemTitle">{{item.userName}}</view>
+    <view class="itemContent">邀请您读《{{item.bName}}》</view>
+    <view class="itemBtn">
+      <view class="zhanwei"></view>
+      <view class="btn" data-index="{{index}}" bindtap="refuse">
+        <image data="item" class="btnNo" mode="aspectFit" src="../../images/no.png"></image>
+      </view>
+      <view class="btn" data-index="{{index}}" bindtap="accept">
+        <image data="item" class="btnYes" mode="aspectFit" src="../../images/yes.png"></image>
+      </view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="page-loading noNews">暂无消息</view>
+</block>

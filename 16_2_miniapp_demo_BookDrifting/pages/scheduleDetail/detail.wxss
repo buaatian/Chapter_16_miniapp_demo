@@ -1,0 +1,47 @@
+
+page {
+  font-family: 'microsoft yahei ui';
+  font-size: 28rpx;
+  background-color: #fff;
+  color: #000;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.show-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40rpx 20rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.show-item .title {
+  width: 150rpx;
+  color: gray;
+}
+
+.show-item .title, .show-item .content {
+  font-size: 32rpx;
+}
+
+.ball {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+}
+
+.bg-normal {
+  background: #46bc62 !important;
+}
+
+.bg-warning {
+  background: #ecaa5b !important;
+}
+
+.bg-danger {
+  background: #e14848 !important;
+}

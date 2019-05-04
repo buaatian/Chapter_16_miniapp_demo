@@ -1,0 +1,12 @@
+<block wx:for="{{signUpList}}" wx:for-item="i">
+<view catchtap="showSignUpInfo" class="c-minheight wx-view_sdbdRz" data-c_act_id="M_57e23400ef714f6d" data-c_e_id="wx_view_8e02c951" data-openid="{{i.openId}}">
+    <view class="c-minheight wx-view_oPJpN6" data-c_e_id="wx_view_75ce1408">
+        <view class="likeuser" data-c_e_id="wx_viewddb8d364">
+            <image class="useravatar" data-c_e_id="wx_image5daa6e7b" mode="aspectFill" src="{{i.avatarUrl}}" style="background-size:  cover; background-position:  center center; background-repeat:  no-repeat; background-image: url({{i.avatarUrl}}); "/>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_Xncpw5" data-c_e_id="wx_view_c3bdc4cf">
+        <text class="c-block wx-text_EPNs0k" data-c_e_id="wx_text_f8904878">{{i.nickName}}</text>
+    </view>
+</view>
+</block>

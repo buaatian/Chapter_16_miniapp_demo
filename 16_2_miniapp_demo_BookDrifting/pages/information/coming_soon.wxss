@@ -1,0 +1,241 @@
+.mine-box {
+  width: 100%;
+  font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+.user {
+  width: 100%;
+  height: 390rpx;
+  display: flex;
+  /*border-bottom: 1rpx solid #ccc;*/
+}
+
+.userBackground {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 390rpx;
+}
+
+.userBackground image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.user-pic {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 35rpx;
+  z-index: 2;
+}
+
+.user-pic image {
+  height: 210rpx;
+  width: 210rpx;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.user-name {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  top: 265rpx;
+  font-size: 35rpx;
+  color: #fff;
+}
+
+.user-text {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 320rpx;
+  z-index: 2;
+  color: greenyellow;
+}
+
+.user-text text {
+  z-index: 2;
+  font-size: 25rpx;
+}
+
+.friendList {
+  width: 100%;
+  margin-bottom: 20rpx;
+  /*box-shadow: 0 1rpx 2rpx 0 #aaa;*/
+  /*border-top: 1rpx solid #ccc;*/
+  /*border-bottom: 1rpx solid #ccc;*/
+}
+
+.friendList-header {
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+}
+
+.friendList-headerTitle {
+  width: 75%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 36rpx;
+  color: gray;
+  padding-left: 20rpx;
+}
+
+.friendList-headerBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.friendList-headerBtn image {
+  height: 60rpx;
+  width: 60rpx;
+}
+
+.page-loading{
+  margin-top:30rpx; 
+  text-align: center;
+  position: relative;
+  transform: translate(-50%,-50%);
+  font-size: 14px;
+  color: #666;
+}
+.friendList ul {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.friend {
+  display: flex;
+  width: 100%;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.friendPhoto {
+  height: 100rpx;
+  width: 20%;
+}
+
+.friendPhoto image {
+  height: 110rpx;
+  width: 110rpx;
+}
+
+.friendInfo {
+  width: 45%;
+}
+.friendOther {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+}
+
+.friendName {
+}
+
+.fid{
+  font-size: 24rpx;
+  color: #aaa;
+  margin-top: -1rpx;
+}
+.friendId {
+  margin-top: 5rpx;
+  font-size: 26rpx;
+  color: gray;
+}
+
+.sendFlower {
+}
+
+.delFriend {
+  margin-left: 40rpx;
+}
+
+.delFriend image {
+  width: 65rpx;
+  height: 65rpx;
+}
+
+.sendFlower image {
+  width: 65rpx;
+  height: 65rpx;
+}
+
+.footer {
+  height: 100%;
+}
+
+button {
+  width: 600rpx;
+  margin: 0 auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+label view {
+  display: flex;
+  margin-top: 20rpx;
+}
+
+label view input {
+  flex: 1;
+  border-bottom: 1rpx solid #aaa;
+}
+
+.register {
+  font-size: 28rpx;
+  color: deepskyblue;
+  margin-left: 400rpx;
+}
+
+.btn {
+  margin-top: 30rpx;
+  background-color: #fff;
+  box-shadow: 0 1rpx 2rpx 0 #aaa;
+}
+
+.btn image {
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.btn ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn ul navigator {
+  width: 25%;
+  height: 170rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.content {
+  margin: auto;
+  padding: 20rpx;
+  font-size: 16px;
+  height: 600rpx;
+  box-shadow: inset 1rpx 1rpx 0rpx 0rpx gray;
+  background-color: #eceff4;
+  background-image: linear-gradient(#e1e6ea 0.1em, transparent 0.1em);
+  background-size: 100% 48rpx;
+  box-sizing: border-box;
+}

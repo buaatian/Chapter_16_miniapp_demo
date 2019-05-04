@@ -1,0 +1,26 @@
+<form class="c-minheight wx-form_oNJdHv" data-c_e_id="wx_form_448167db" bindsubmit="changeMyInfo">
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view_7cf0f539">
+        <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_view_5c1eb18b">
+            <text class="c-block wx-text_mQdsma" data-c_e_id="wx_text_856a5820">姓名</text>
+        </view>
+        <view class="c-minheight wx-view_9oEnfO" data-c_e_id="wx_view_b1703cb6">
+            <input class="c-block c-fullwidth wx-input_d1EMkz" data-c_e_id="wx_input_ca8b3356" id="trueName" name="name" placeholder="请填写真实姓名" type="text" value="{{name}}"/>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_viewe7848b4f">
+        <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_viewf2f7d0ad">
+            <text class="c-block wx-text_mQdsma" data-c_e_id="wx_textbd3cabf7">电话号码</text>
+        </view>
+        <view class="c-minheight wx-view_9oEnfO" data-c_e_id="wx_view9ea04976">
+            <input class="c-block c-fullwidth wx-input_d1EMkz" data-c_e_id="wx_inputf6e1a09a" id="phoneNum" name="phoneNum" placeholder="请填写有效手机号码" type="number" value="{{phoneNum}}" maxlength="11" bindconfirm="checkPhoneNum"/>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_UpQe8h" data-c_e_id="wx_view_dc309cc4">
+        <button class="wx-button_LcidkE" data-c_act_id="M_a19877c554170837" data-c_e_id="wx_button_02cb4df9" formType="submit" hover-class="button-hover" size="default" type="primary">
+            保存修改
+        </button>
+        <button catchtap="delMyInfo" class="wx-button_LcidkE" data-c_act_id="act_2f897881" data-c_e_id="wx_button776f7f26" hover-class="button-hover" size="default" type="warn">
+            删除我的信息
+        </button>
+    </view>
+</form>

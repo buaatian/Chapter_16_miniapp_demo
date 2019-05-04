@@ -1,0 +1,147 @@
+<view class="mine-box">
+  <block wx:if="{{sendFlowers}}">
+    <modal title="送花" confirm-text="确认" cancel-text="取消" hidden="{{!sendFlowers}}" bindconfirm="confirmSendFlower" bindcancel="cancelSendFlower">
+    </modal>
+  </block>
+  <block wx:if="{{delFriends}}">
+    <modal title="删除好友" confirm-text="确认" cancel-text="取消" hidden="{{!delFriends}}" bindconfirm="confirmdelFriend" bindcancel="canceldelFriend">
+    </modal>
+  </block>
+  <block wx:if="{{addFriend}}">
+    <modal title="添加好友" confirm-text="确认" cancel-text="取消" hidden="{{!addFriend}}" bindconfirm="confirmAddFriend" bindcancel="cancelAddFriend">
+      <label>
+        <view class="section">
+          <text>好友帐号:</text>
+          <input bindinput="getFriendId" maxlength="20" placeholder="好友帐号" />
+        </view>
+      </label>
+    </modal>
+  </block>
+  <block wx:if="{{item.pageType=='login'}}">
+    <template is="login" data="{{...item}}" />
+  </block>
+  <block wx:if="{{item.pageType=='register'}}">
+    <template is="register" />
+  </block>
+  <block wx:if="{{item.pageType=='userInfo'}}">
+    <view class="user">
+      <view class="userBackground">
+        <image src="../../images/pic3.jpg"></image>
+      </view>
+      <view class="user-pic">
+        <image src="/images/{{userInfo.sex}}.png"></image>
+      </view>
+      <view class="user-name">{{userInfo.userName}}</view>
+      <view class="user-text">
+        <text>魅力值：{{userInfo.flowerCount}}</text>
+      </view>
+    </view>
+
+    <view class="btn">
+      <ul>
+        <block wx:for="{{mine_list}}" wx:for-item="mine">
+          <navigator url="{{mine.url}}">
+            <image src="{{mine.pic_url}}"></image><span>{{mine.title}}</span>
+          </navigator>
+        </block>
+      </ul>
+    </view>
+
+    <view class="friendList">
+      <view class="friendList-header">
+        <view class="friendList-headerTitle">好友列表</view>
+        <view class="friendList-headerBtn" bindtap="addFriends">
+          <image src="/images/btnAddFriend.png"></image>
+        </view>
+      </view>
+      <block wx:if="{{friendListLoad}}">
+        <view class="page-loading">
+          <text class="weui-loading" />
+          <text class="loading-text">加载中</text>
+        </view>
+      </block>
+      <block wx:else>
+        <ul>
+          <view class="friend" wx:for="{{friendList}}" wx:for-item="mine" wx:key="{{index}}">
+            <view class="friendPhoto">
+              <image src="/images/{{mine.sex}}.png"></image>
+            </view>
+            <view class="friendInfo">
+              <view class="friendName">{{mine.userName}}</view>
+              <view class="fid">{{mine.userId}}</view>
+              <view class="friendId">魅力值：{{mine.flowerCount}}</view>
+            </view>
+            <view class="friendOther">
+              <view class="sendFlower" bindtap="viewSendFlower" data-id="{{mine.userId}}">
+                <image src="/images/sendFlower3.png"></image>
+              </view>
+              <view class="delFriend" bindtap="viewDelFriends" data-id="{{mine.userId}}" data-index="{{index}}">
+                <image src="/images/delFriend.png"></image>
+              </view>
+            </view>
+          </view>
+        </ul>
+      </block>
+    </view>
+    <view class="footer">
+      <button type="warn" bindtap="quit"> 退出登录</button>
+    </view>
+  </block>
+</view>
+
+<template name="login">
+  <view>
+    <modal title="请登录" confirm-text="确认登录" hidden="{{!(pageType=='login')}}" bindconfirm="modalconfirm" bindcancel="modalcancel">
+      <label>
+        <view class="section">
+          <text>账号:</text>
+          <input bindinput="getUserInfo" maxlength="20" placeholder="登录帐号" />
+        </view>
+        <view class="section">
+          <text>密码:</text>
+          <input bindinput="saveuserpwd" maxlength="20" password="true" placeholder="请输入密码" />
+        </view>
+        <view class="register" bindtap="registerFun">立即注册</view>
+      </label>
+    </modal>
+  </view>
+</template>
+<template name="register">
+  <view>
+    <modal title="注册" bindconfirm="registerConfirm" bindcancel="registerCancel">
+      <label>
+        <view class="section">
+          <text>账号:</text>
+          <input type="text" maxlength="20" placeholder="建议使用手机号" bindblur="saveId" />
+        </view>
+        <view class="section">
+          <text>昵称:</text>
+          <input type="text" maxlength="20" bindblur="saveName" placeholder="用户名" />
+        </view>
+        <view class="section">
+          <text>密码:</text>
+          <input bindblur="savePwd" maxlength="20" password="true" placeholder="请输入密码" />
+        </view>
+        <view class="section">
+          <text>确认密码:</text>
+          <input bindblur="saveRePwd" maxlength="20" password="true" placeholder="请确认密码" />
+        </view>
+        <view class="section">
+          <text>年龄:</text>
+          <input type="number" maxlength="10" placeholder="年龄" bindblur="saveAge" />
+        </view>
+        <view class="section">
+          <text>城市:</text>
+          <input type="text" maxlength="30" placeholder="所在城市" bindblur="saveCity" />
+        </view>
+        <!--<view class="section">
+          <text>性别:</text>
+          <radio-group bindchange="saveSex">
+            <radio value="m" checked='{{sex=="m"}}' />男
+            <radio value="f" checked='{{sex=="f"}}' />女
+          </radio-group>
+        </view>-->
+      </label>
+    </modal>
+  </view>
+</template>

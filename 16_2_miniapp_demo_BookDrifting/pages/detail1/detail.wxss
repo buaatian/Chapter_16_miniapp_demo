@@ -1,0 +1,68 @@
+page{
+  background-color: #fff;
+}
+.summary{
+  width: 100%;
+}
+.btnSaveView{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+}
+.btnSave {
+  font-size: 45rpx;
+  margin: auto;
+  width: 80%;
+  color: white;
+  background-color: #e53927;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.common-image-frame {
+  width: 100%;
+  padding: 20rpx;
+}
+.common-image{
+  width: 700rpx;
+}
+
+.common-textarea{
+  width: 95%;
+  height: 500rpx;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.content-text{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.content-text view {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.tabbar {
+  position: fixed;
+  right: 80rpx;
+  bottom: 140rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.item .icon {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.action-item, .action-cacel {
+  font-size: 30rpx;
+  color: #39b5de;
+}

@@ -1,0 +1,38 @@
+
+page{
+  background-color: #ddd;
+}
+.item{
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin: 20rpx;
+  padding: 20rpx;
+}
+.itemTitle{
+  color: gray;
+  font-size: 34rpx;
+}
+.itemContent{
+  margin: 20rpx;
+  font-size: 28rpx;
+}
+.itemBtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.zhanwei{
+  width: 70%;
+}
+.btn{
+  width: 15%;
+  display: flex;
+  padding: 10rpx;
+}
+.itemBtn image{
+  height: 60rpx;
+}
+.noNews{
+  font-size: 50rpx;
+}

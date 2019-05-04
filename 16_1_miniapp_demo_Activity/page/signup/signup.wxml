@@ -1,0 +1,36 @@
+<form bindsubmit="signUpSubmit" class="c-minheight wx-form_oNJdHv" data-c_e_id="wx_form_448167db">
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view_7cf0f539">
+        <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_view_5c1eb18b">
+            <text class="c-block wx-text_mQdsma" data-c_e_id="wx_text_856a5820">姓名</text>
+        </view>
+        <view class="c-minheight wx-view_9oEnfO" data-c_e_id="wx_view_b1703cb6">
+            <input class="c-block c-fullwidth wx-input_d1EMkz" data-c_e_id="wx_input_ca8b3356" id="trueName" name="name" value="{{name}}" placeholder="请填写真实姓名" type="text"/>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_viewe7848b4f">
+        <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_viewf2f7d0ad">
+            <text class="c-block wx-text_mQdsma" data-c_e_id="wx_textbd3cabf7">联系方式</text>
+        </view>
+        <view class="c-minheight wx-view_9oEnfO" data-c_e_id="wx_view9ea04976">
+            <input class="c-block c-fullwidth wx-input_d1EMkz" data-c_e_id="wx_inputf6e1a09a" id="phoneNum" name="phoneNum" value="{{phoneNum}}" placeholder="请填写有效手机号码" type="number"/>
+        </view>
+    </view>
+    <text class="c-block wx-text_eGC0dm" data-c_e_id="wx_text_909e003a">补充说明</text>
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view7e0c3f1b">
+        <textarea class="c-block c-fullwidth wx-textarea_nF21Qs" data-c_e_id="wx_textarea_329a1a81" name="others" value="{{others}}" placeholder="其余需要说明的事项" type="textarea"/>
+    </view>
+        <view hidden="{{fee>0?false:true}}" class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view804051a2">
+            <view class="page-body-info">
+                <block wx:if="{{imageSrc}}">
+                    <view class="image-plus-text">请扫描二维码向活动发起人支付{{fee}}元</view>
+                    <image src="{{imageSrc}}" bindlongtap="saveImage" class="image" mode="aspectFit"></image>
+                    <view class="image-plus-text">长按图片可保存到本地</view>
+                </block>
+            </view>
+        </view>
+    <view class="c-minheight wx-view_UpQe8h" data-c_e_id="wx_view_dc309cc4">
+        <button class="wx-button_LcidkE" data-c_act_id="M_a19877c554170837" data-c_e_id="wx_button_02cb4df9" formType="submit" hover-class="button-hover" size="default" type="primary">
+            确认报名
+        </button>
+    </view>
+</form>

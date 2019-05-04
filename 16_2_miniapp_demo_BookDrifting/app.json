@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/sort/sort",
+    "pages/launch/launch",
+    "pages/search/search",
+    "pages/list/list",
+    "pages/detail/detail",
+    "pages/driftingdetail/driftingdetail",
+    "pages/bookNotes/in_theathers",
+    "pages/information/coming_soon",
+    "pages/detail1/detail",
+    "pages/index1/index",
+    "pages/scheduleIndex/index",
+    "pages/scheduleDetail/detail",
+    "pages/alterInfo/alterInfo",
+    "pages/message/message",
+    "pages/mapshow/mapshow"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#65BC5F",
+    "navigationBarTitleText": "有书共读",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#989898",
+    "selectedColor": "#2b2b2b",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "活动中心",
+        "iconPath": "images/nav11.png",
+        "selectedIconPath": "images/nav12.png"
+      },
+      {
+        "pagePath": "pages/sort/sort",
+        "text": "图书广场",
+        "iconPath": "images/nav22.png",
+        "selectedIconPath": "images/nav21.png"
+      },
+      {
+        "pagePath": "pages/launch/launch",
+        "text": "发起活动",
+        "iconPath": "images/nav31.png",
+        "selectedIconPath": "images/nav32.png"
+      },
+      {
+        "pagePath": "pages/bookNotes/in_theathers",
+        "iconPath": "images/nav42.png",
+        "selectedIconPath": "images/nav41.png",
+        "text": "读书笔记"
+      },
+      {
+        "pagePath": "pages/information/coming_soon",
+        "iconPath": "images/nav51.png",
+        "selectedIconPath": "images/nav52.png",
+        "text": "个人信息"
+      }
+    ]
+  }
+}

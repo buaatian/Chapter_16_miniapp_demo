@@ -1,0 +1,35 @@
+<block wx:if="{{showLoading}}">
+  <view class="page-loading">
+    <text class="weui-loading" />
+    <text class="loading-text">加载中</text>
+  </view>
+</block>
+<block wx:elif="{{books.length==0}}">
+  <view class="page-loading">请添加书籍</view>
+</block>
+<block wx:else>
+    <view class="book-itemNote" bindtap="mediaTouch" wx:for="{{books}}" wx:for-item="book" data-id="{{book.id}}" data-title="{{book.title}}">
+      <view class="book-image">
+        <image src="{{book.images.medium}}"></image>
+      </view>
+      <view class="book-info">
+        <view>
+          <view class="book-titleNote">{{book.title}}</view>
+        </view>
+        <text class="label">评分</text>
+        <text class="rating">{{book.rating.average}}</text>
+        <!--<view class="directors">
+          <text class="label">作者</text>
+          <text class="person">{{book.author[0]}}222</text>
+        </view>-->
+      </view>
+    </view>
+    <action-sheet hidden="{{mediaActionSheetHidden}}" bindchange="mediaActionSheetChange">
+      <block wx:for-items="{{mediaActionSheetItems}}" wx:for-index="id">
+        <action-sheet-item class="action-item" bindtap="{{mediaActionSheetBinds[id]}}">
+          {{item}}
+        </action-sheet-item>
+      </block>
+      <action-sheet-cancel class='action-cacel'>取消</action-sheet-cancel>
+    </action-sheet>
+</block>

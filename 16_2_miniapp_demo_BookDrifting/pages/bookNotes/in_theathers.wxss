@@ -1,0 +1,48 @@
+.book-itemNote {
+  width: 28%;
+  margin: 21rpx;
+  float: left;
+}
+
+.book-image {
+  width: 100%;
+}
+
+.book-image image {
+  width: 100%;
+  height: 290rpx;
+}
+
+.book-info {
+  width: 100%;
+}
+
+.book-titleNote {
+  font-size: 30rpx;
+  height: 36rpx;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0;
+}
+
+.rating {
+  margin-left: 12rpx;
+  font-size: 24rpx;
+  color: #666;
+  height: 24rpx;
+}
+
+.book-info .label {
+  font-size: 24rpx;
+  height: 24rpx;
+  margin-right: 8rpx;
+  color: #666;
+}
+
+.person {
+  font-size: 28rpx;
+  height: 28rpx;
+  margin-right: 6rpx;
+}

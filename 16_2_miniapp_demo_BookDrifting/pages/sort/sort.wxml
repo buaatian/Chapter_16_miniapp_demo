@@ -1,0 +1,53 @@
+<view class="container">
+  <scroll-view class="wrapper-scroll" scroll-y="true" scroll-top="100">
+    <view class="banner-box">
+      <!--搜索-->
+      <view hover-class="className" class="search-box">
+        <view class="search-icon">
+          <image src="../../images/icon_search.png"></image>
+        </view>
+        <input class="search-input" bindinput="changeValue" placeholder="搜书名/作者/ISBN" value=""></input>
+        <text class="search-btn" bindtap="jumpToSearch">搜索</text>
+      </view>
+      <swiper class="banner-bg" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!--banner end-->
+
+    <view class="wrapper-content">
+      <view class="ibox-top">
+        <text class="ibox-title">图书热搜榜</text>
+      </view>
+      <view class="list-container">
+        <view class="list-ui">
+          <block wx:for="{{temp}}">
+            <!--navigator是导航、item是for循环中的每个项-->
+            <!--navigator中的 url: 要跳转的路径，这里是可以传值的。参数与路径之间用？隔开，每个参数用&隔开。-->
+            <navigator class="list-nav" hover-class="nav-hover" url="../detail/detail?id={{item.id}}">
+              <view class="book-item">
+                <image class="book-item-img" src="{{item.image}}"></image>
+                <view class="book-item-infos">
+                  <view class="book-title">{{item.title}}</view>
+
+                  <view class="book-star-box">
+                    <text class="average-rating">评分：{{item.rating.average}}</text>
+                  </view>
+                </view>
+              </view>
+            </navigator>
+          </block>
+
+
+        </view>
+
+      </view>
+    </view>
+
+  </scroll-view>
+
+</view>

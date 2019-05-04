@@ -1,0 +1,27 @@
+<form class="c-minheight wx-form_oNJdHv" data-c_e_id="wx_form_448167db" bindsubmit="delSignUpInfo">
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view_7cf0f539">
+        <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_view_5c1eb18b">
+            <text class="c-block wx-text_mQdsma" data-c_e_id="wx_text_856a5820">姓名</text>
+        </view>
+        <view class="c-minheight wx-view_9oEnfO" data-c_e_id="wx_view_b1703cb6">
+            <text class="c-block wx-text_rzJM73" data-c_e_id="wx_text_8d61d6ad">{{name}}</text>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_viewe7848b4f">
+        <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_viewf2f7d0ad">
+            <text class="c-block wx-text_mQdsma" data-c_e_id="wx_textbd3cabf7">联系方式</text>
+        </view>
+        <view class="c-minheight wx-view_9oEnfO" data-c_e_id="wx_view9ea04976">
+            <text bindtap="makePhoneCall" class="c-block wx-text_rzJM73 placelink" data-c_e_id="wx_textf3c19e14">{{phoneNum}}</text>
+        </view>
+    </view>
+    <text class="c-block wx-text_eGC0dm" data-c_e_id="wx_text_909e003a">补充说明</text>
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view7e0c3f1b">
+        <textarea class="c-block c-fullwidth wx-textarea_nF21Qs" data-c_e_id="wx_textarea_329a1a81" disabled="True" name="textarea1" placeholder="其余需要说明的事项" type="textarea" value="{{others}}"/>
+    </view>
+    <view class="c-minheight wx-view_UpQe8h" data-c_e_id="wx_view_dc309cc4">
+        <button class="wx-button_LcidkE" data-c_e_id="wx_button_02cb4df9" formType="submit" hover-class="button-hover" size="default" type="warn">
+            删除该人
+        </button>
+    </view>
+</form>

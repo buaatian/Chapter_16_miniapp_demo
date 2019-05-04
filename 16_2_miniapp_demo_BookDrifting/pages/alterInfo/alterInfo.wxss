@@ -1,0 +1,31 @@
+/* alterInfo.wxss */
+page{
+  background-color: #ddd;
+  padding-top: 100rpx;
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 1rpx gray solid;
+  background-color: #fff;
+  padding: 20rpx 20rpx;
+}
+.itemTop{
+  border-top: 1rpx gray solid;
+}
+.item-title{
+  color: gray;
+  width: 30%;
+}
+.item-input{
+  width: 70%;
+}
+button{
+  margin-top: 40rpx;
+  background-color: #e53927;
+  color: #fff;
+  font-size: 36rpx;
+  width: 90%;
+}

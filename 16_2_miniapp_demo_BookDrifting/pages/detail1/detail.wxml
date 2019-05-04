@@ -1,0 +1,28 @@
+<block wx:if="{{showLoading}}">
+  <view class="page-loading">
+    <text class="weui-loading" />
+    <text class="loading-text">加载中</text>
+  </view>
+</block>
+<block wx:else>
+    <textarea class="common-textarea" maxlength="5000" bindinput="articlechange" value="{{bookNote.article}}" />
+    <view bindtap="delImage" class="common-image-frame">
+      <image hidden="{{bookNote.imageUrl==''}}" mode="aspectFit" src="{{bookNote.imageUrl}}" class="common-image"></image>
+    </view>
+    <view class="tabbar" style="display:{{showTab ? 'flex' : 'none'}};">
+      <view class="item" bindtap="mediaTouch">
+        <image class="icon" mode="aspectFit" src="/images/image.png"></image>
+      </view>
+    </view>
+    <action-sheet hidden="{{mediaActionSheetHidden}}" bindchange="mediaActionSheetChange">
+      <block wx:for-items="{{mediaActionSheetItems}}" wx:for-index="id">
+        <action-sheet-item class="action-item" bindtap="{{mediaActionSheetBinds[id]}}">
+          {{item}}
+        </action-sheet-item>
+      </block>
+      <action-sheet-cancel class='action-cacel'>取消</action-sheet-cancel>
+    </action-sheet>
+    <view class="btnSaveView">
+      <button class="btnSave" bindtap="saveBookNote">保存</button>
+    </view>
+</block>

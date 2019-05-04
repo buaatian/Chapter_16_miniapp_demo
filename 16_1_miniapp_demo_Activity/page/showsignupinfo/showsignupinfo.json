@@ -1,0 +1,8 @@
+{
+  "navigationBarTextStyle": "white", 
+  "navigationBarBackgroundColor": "#000000", 
+  "navigationBarTitleText": "报名信息", 
+  "backgroundColor": "#efefef", 
+  "enablePullDownRefresh": false, 
+  "backgroundTextStyle": "dark"
+}

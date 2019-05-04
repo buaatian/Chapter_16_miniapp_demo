@@ -1,0 +1,57 @@
+<view catchtap="signUp" class="c-minheight wx-view_JbWxfk" data-c_act_id="M_4ef903a4fb717f37" data-c_e_id="wx_view_253b7108">
+    <view class="c-minheight carditem01" data-c_e_id="wx_view49e0fee3">
+        <view class="wx-view_QvvUkU2" data-c_e_id="wx_view89a695dc">
+            <navigator class="wx-navigator_rv4BGW" data-c_e_id="wx_navigatorfb985874" hover-class="navigator-hover">
+                <image class="wx-image_tBcdCT" data-c_e_id="wx_image814e6d15" mode="aspectFill" src="{{avatarUrl}}" />
+                <view class="wx-view_cPj0ok" data-c_e_id="wx_view3b3bb1ea">
+                    <text class="c-block wx-text_TvHPc9" data-c_e_id="wx_textd02a9cbf">{{name}}</text>
+                    <text class="c-block wx-text_LS2Jup" data-c_e_id="wx_textdff05422">发起者：{{creatorName}}</text>
+                    <text class="c-block wx-text_LS2Jup placelink" data-c_e_id="wx_textdff05422" catchtap="makePhoneCall">联系方式：{{phoneNum}}</text>
+                </view>
+            </navigator>
+        </view>
+        <navigator class="wx-navigator_PNd8QQ" data-c_e_id="wx_navigator2ea821a9" hover-class="navigator-hover">
+            <view class="weui-form-preview" data-c_e_id="wx_view_a6cc0615">
+                <view class="weui-form-preview__hd2" data-c_e_id="wx_viewda26faee">
+                    <view class="weui-form-preview__item" data-c_e_id="wx_view_6bc120f9">
+                        <text class="weui-form-preview__label2" data-c_e_id="wx_text_20bd4c37">开始时间</text>
+                        <text class="weui-form-preview__value" data-c_e_id="wx_text_2da876e1">{{acStartDateTime}}</text>
+                    </view>
+                    <view class="weui-form-preview__item" data-c_e_id="wx_view_6bc120f9">
+                        <text class="weui-form-preview__label2" data-c_e_id="wx_text_20bd4c37">结束时间</text>
+                        <text class="weui-form-preview__value" data-c_e_id="wx_text_2da876e1">{{acEndDateTime}}</text>
+                    </view>
+                    <view class="weui-form-preview__item" data-c_e_id="wx_viewc8248196">
+                        <text class="weui-form-preview__label2" data-c_e_id="wx_textb3c64887">报名截止</text>
+                        <text class="weui-form-preview__value" data-c_e_id="wx_text3e581197">{{signEndDateTime}}</text>
+                    </view>
+                    <view class="weui-form-preview__item" data-c_e_id="wx_view02f5c393">
+                        <text class="weui-form-preview__label2" data-c_e_id="wx_text0add0940">地点</text>
+                        <text catchtap="showLocation" class="placelink weui-form-preview__value">{{placeName}}</text>
+                    </view>
+                    <view class="weui-form-preview__item" data-c_e_id="wx_viewd2c62837">
+                        <text class="weui-form-preview__label2" data-c_e_id="wx_textf151cc55">费用</text>
+                        <text wx:if="{{fee > 0}}" class="weui-form-preview__value" data-c_e_id="wx_text29232a4e">￥{{fee}}/人</text>
+                        <text wx:else class="weui-form-preview__value" data-c_e_id="wx_text29232a4e">免费</text>
+                    </view>
+                    <view class="weui-form-preview__item" data-c_e_id="wx_viewaf0c6b9f">
+                        <text class="weui-form-preview__label2" data-c_e_id="wx_textf7975ea5">人数</text>
+                        <text class="weui-form-preview__value" data-c_e_id="wx_text203c6313">{{signUpNum}}/{{maxMembers}}</text>
+                    </view>
+                    <view class="weui-form-preview__item" data-c_e_id="wx_viewcbe78ca0">
+                        <text class="weui-form-preview__label2" data-c_e_id="wx_text9015f3b2">简介</text>
+                    </view>
+                    <text class="c-block wx-text_6zTs4l" data-c_e_id="wx_text8ab03743">{{introduction}}</text>
+                </view>
+            </view>
+        </navigator>
+        <view class="weui-form-preview__btn_primary" data-c_e_id="wx_view2deefb31">
+            <view class="wx-view_coWu6c" data-c_e_id="_other_text0b64252f">
+                点击报名
+            </view>
+        </view>
+    </view>
+</view>
+<button  class="wx-fixButton" button-hover="navigator-hover" open-type="share">
+     <image class="wx-image_SfQyMy" data-c_e_id="wx_image_6a85bf20" mode="scaleToFill" src="../../resources/share_4.png" style="background-size:  contain; background-position:  center center; background-repeat:  no-repeat; background-image: url(../../resources/share_4.png); "/>
+</button>

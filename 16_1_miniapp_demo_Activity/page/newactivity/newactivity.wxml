@@ -1,0 +1,114 @@
+<form class="c-minheight wx-form_oNJdHv" data-c_e_id="wx_form_448167db" bindsubmit="addNewActivity" bindreset="formReset">
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view_7cf0f539">
+        <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_view_5c1eb18b">
+            <text class="c-block wx-text_mQdsma" data-c_e_id="wx_text_856a5820">名称</text>
+        </view>
+        <view class="c-minheight wx-view_9oEnfO" data-c_e_id="wx_view_b1703cb6">
+            <input class="c-block c-fullwidth wx-input_pCZi7E" data-c_e_id="wx_input_5f21e0f8" name="name" placeholder="请输入活动名称" type="text"/>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view199616f8">
+        <view class="c-minheight wx-view_MGBq9a" data-c_e_id="wx_view_2ddf4d12">
+            <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_view1d399f09">
+                <text class="c-block wx-text_mQdsma" data-c_e_id="wx_text70e8adfc">开始时间</text>
+            </view>
+            <picker class="wx-picker_QGTYyg_my" name="acStartDate" mode="date" start="2000-01-01" end="2100-12-31" value="{{acStartDate}}" bindchange="acStartDateChange">
+                <view class="c-minheight wx-view_picker">
+                    {{acStartDate}}
+                </view>
+            </picker>
+            <picker class="wx-picker_QGTYyg_my" name="acStartTime" mode="time" start="00:00" end="23:59" value="{{acStartTime}}" bindchange="acStartTimeChange">
+                <view class="c-minheight wx-view_picker">
+                    {{acStartTime}}
+                </view>
+            </picker>
+        </view>
+        <view class="c-minheight wx-view_MGBq9a" data-c_e_id="wx_view5bad8504">
+            <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_viewa7353543">
+                <text class="c-block wx-text_mQdsma" data-c_e_id="wx_textc394e2fd">结束时间</text>
+            </view>
+            <picker class="wx-picker_QGTYyg_my" name="acEndDate" mode="date" start="2000-01-01" end="2100-12-31" value="{{acEndDate}}" bindchange="acEndDateChange">
+                <view class="c-minheight wx-view_picker">
+                    {{acEndDate}}
+                </view>
+            </picker>
+            <picker class="wx-picker_QGTYyg_my" name="acEndTime" mode="time" start="00:00" end="23:59" value="{{acEndTime}}" bindchange="acEndTimeChange">
+                <view class="c-minheight wx-view_picker">
+                    {{acEndTime}}
+                </view>
+            </picker>
+        </view>
+        <view class="c-minheight wx-view_MGBq9a" data-c_e_id="wx_viewd8540d10">
+            <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_viewc859be1d">
+                <text class="c-block wx-text_mQdsma" data-c_e_id="wx_text24ff70dd">报名截止时间</text>
+            </view>
+            <picker class="wx-picker_QGTYyg_my" name="signEndDate" mode="date" start="2000-01-01" end="2100-12-31" value="{{signEndDate}}" bindchange="signEndDateChange">
+                <view class="c-minheight wx-view_picker">
+                    {{signEndDate}}
+                </view>
+            </picker>
+            <picker class="wx-picker_QGTYyg_my" name="signEndTime" mode="time" start="00:00" end="23:59" value="{{signEndTime}}" bindchange="signEndTimeChange">
+                <view class="c-minheight wx-view_picker">
+                    {{signEndTime}}
+                </view>
+            </picker>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view8f5e8a51">
+        <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_viewd79d3260">
+            <text class="c-block wx-text_mQdsma" data-c_e_id="wx_text0d7480ed">地点</text>
+        </view>
+        <view class="c-minheight wx-view_9oEnfO" data-c_e_id="wx_viewc8c35887">
+            <input bindfocus="chooseLocation" class="c-block c-fullwidth wx-input_pCZi7E" data-c_e_id="wx_input320c73a6" name="placeName" placeholder="点击在地图上选择位置" type="text" value="{{placeName}}"/>
+        </view>
+    </view>
+    <text class="c-block wx-text_eGC0dm" data-c_e_id="wx_text_909e003a">活动简介</text>
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view7e0c3f1b">
+        <textarea class="c-block c-fullwidth wx-textarea_nF21Qs" data-c_e_id="wx_textarea_329a1a81" name="introduction" placeholder="请填写活动简介" type="textarea"/>
+    </view>
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view41204a7c">
+        <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_viewb0129135">
+            <text class="c-block wx-text_mQdsma" data-c_e_id="wx_text34e99cbb">参与人数</text>
+        </view>
+        <view class="c-minheight wx-view_9oEnfO" data-c_e_id="wx_viewe0a82ae7">
+            <input class="c-block c-fullwidth wx-input_pCZi7E" data-c_e_id="wx_input3fd6d0e4" name="maxMembers" placeholder="请输入活动人数上限" type="number"/>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view804051a2">
+        <view class="c-minheight wx-view_sRFXtT" data-c_e_id="wx_viewb4afa132">
+            <text class="c-block wx-text_mQdsma" data-c_e_id="wx_text53c3dff8">费用</text>
+        </view>
+        <view class="c-minheight wx-view_9oEnfO" data-c_e_id="wx_view76393b7f">
+            <input class="c-block c-fullwidth wx-input_pCZi7E" data-c_e_id="wx_input6ac1afe4" name="fee" placeholder="￥/人" bindinput="showUpload" type="digit"/>
+        </view>
+    </view>
+    <!--  -->
+
+        
+
+      <!--  -->
+    <view hidden="{{show>0? false:true}}" class="c-minheight wx-view_KT50Vn" data-c_e_id="wx_view804051a2">
+        <view class="page-body-info">
+            <block wx:if="{{imageSrc}}">
+                <image src="{{imageSrc}}" class="image" bindtap="chooseImage" mode="aspectFit"></image>
+                <view class="image-plus-text">点击图片可重新上传</view>
+            </block>
+
+            <block wx:else>
+                <view class="image-plus image-plus-nb" bindtap="chooseImage">
+                    <view class="image-plus-horizontal"></view>
+                    <view class="image-plus-vertical"></view>
+                </view>
+                <view class="image-plus-text">请上传您的个人微信收款二维码图片</view>
+            </block>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_UpQe8h" data-c_e_id="wx_view_dc309cc4">
+        <button class="wx-button_LcidkE" data-c_act_id="M_1bea33ccaa1d7b5e" data-c_e_id="wx_button_02cb4df9" formType="submit" hover-class="button-hover" size="default" type="primary">
+            确认发起活动
+        </button>
+        <button class="wx-button_bottom" data-c_e_id="wx_button_3e06f210" formType="reset" hover-class="button-hover" size="default" type="default">
+            清空
+        </button>
+    </view>
+</form>

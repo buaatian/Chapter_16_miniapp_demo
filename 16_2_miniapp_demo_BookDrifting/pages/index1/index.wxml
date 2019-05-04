@@ -1,0 +1,16 @@
+<scroll-view class="list" style="height: {{ windowHeight }}px; width: {{ windowWidth }}px;" scroll-y="true"  bindscrolltolower="loadMore" lower-threshold="800">
+  <block wx:for="{{ trips }}" wx:for-item="dftItem" wx:key="unique">
+    <navigator class="list-nav"  hover-class="nav-hover" url="../driftingdetail/driftingdetail?id={{dftItem.doubanId}}&&pt={{dftItem.location}}&&pr={{dftItem.hid}}&&sd={{dftItem.startDate}}&&actid={{dftItem.activityId}}&&status={{dftItem.status}}&&jd={{dftItem.jingDu}}&&wd={{dftItem.weiDu}}">
+      <view class="m-trip">              
+        <image class="cover" src="{{dftItem.imageUrl}}" mode="aspectFill"></image>
+        <view class="info">
+          <text class="h2">{{ dftItem.bName }}</text>
+          <view class="detail">
+            <view><text>发起地点：{{ dftItem.location }}</text></view>
+            <view><text>发起时间：{{dftItem.startDate}}</text></view>
+          </view>
+        </view>
+      </view>
+     </navigator>
+  </block>
+</scroll-view>

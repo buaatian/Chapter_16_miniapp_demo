@@ -1,0 +1,35 @@
+<view class="container">
+  <scroll-view class="wrapper-scroll" scroll-y="true">
+    <view class="detail-box">
+      <view class="detail-box-bg" style=" background-image: url({{bookInfo.images.large}})"></view>
+      <image class="detail-img" src="{{bookInfo.images.large}}"></image>
+    </view>
+
+    <view class="detail-info">
+      <view class="detail-fl">
+        <view class="detail-title">{{bookInfo.title}}</view>
+        <view class="detail-text detail-author">作者：{{bookInfo.author}}</view>
+        <view class="detail-text  detail-publisher">出版社：{{bookInfo.publisher}}</view>
+        <view class="detail-text  detail-pubdate">出版时间：{{bookInfo.pubdate}}</view>
+      </view>
+    </view>
+
+    <view class="wrapper-content3">
+    </view>
+    <view class="wrapper-content">
+      <text class="ibox-title-small">活动详情</text>
+      <view class="ibox-content">
+        <view>开始时间：{{starttime}}</view>
+        <navigator url="../mapshow/mapshow?wd={{wd}}&&jd={{jd}}"><text>漂流地点：</text><text class="loc">{{launchposition}}\n</text></navigator>
+        <view>发起者ID：{{launchperson}}</view>
+        <view>状态：{{status==0?'进行中':'已结束'}}</view>
+      </view>
+    </view>
+
+    <view class="button_area">
+      <button class="button" bindtap="bindSubmit" hidden="{{status==0?false:true}}">扫描书籍条形码签到</button>
+    </view>
+
+  </scroll-view>
+</view>
+
