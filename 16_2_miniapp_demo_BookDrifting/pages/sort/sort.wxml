@@ -25,24 +25,52 @@
       </view>
       <view class="list-container">
         <view class="list-ui">
-          <block wx:for="{{temp}}">
-            <!--navigator是导航、item是for循环中的每个项-->
-            <!--navigator中的 url: 要跳转的路径，这里是可以传值的。参数与路径之间用？隔开，每个参数用&隔开。-->
+          <!-- <block wx:for="{{temp}}">
             <navigator class="list-nav" hover-class="nav-hover" url="../detail/detail?id={{item.id}}">
               <view class="book-item">
                 <image class="book-item-img" src="{{item.image}}"></image>
                 <view class="book-item-infos">
                   <view class="book-title">{{item.title}}</view>
-
                   <view class="book-star-box">
                     <text class="average-rating">评分：{{item.rating.average}}</text>
                   </view>
                 </view>
               </view>
             </navigator>
-          </block>
-
-
+          </block> -->
+          <navigator class="list-nav" hover-class="nav-hover" url="../detail/detail?id={{item.id}}">
+              <view class="book-item">
+                <image class="book-item-img" src="https://img1.doubanio.com/view/subject/l/public/s29799269.jpg"></image>
+                <view class="book-item-infos">
+                  <view class="book-title">失踪的孩子</view>
+                  <view class="book-star-box">
+                    <text class="average-rating">评分：9.2</text>
+                  </view>
+                </view>
+              </view>
+          </navigator>
+          <navigator class="list-nav" hover-class="nav-hover" url="../detail/detail?id={{item.id}}">
+              <view class="book-item">
+                <image class="book-item-img" src="https://img3.doubanio.com/view/subject/l/public/s29651121.jpg"></image>
+                <view class="book-item-infos">
+                  <view class="book-title">房思琪的初恋乐园</view>
+                  <view class="book-star-box">
+                    <text class="average-rating">评分：9.2</text>
+                  </view>
+                </view>
+              </view>
+          </navigator>
+          <navigator class="list-nav" hover-class="nav-hover" url="../detail/detail?id={{item.id}}">
+              <view class="book-item">
+                <image class="book-item-img" src="https://img3.doubanio.com/view/subject/l/public/s29776913.jpg"></image>
+                <view class="book-item-infos">
+                  <view class="book-title">莫斯科绅士</view>
+                  <view class="book-star-box">
+                    <text class="average-rating">评分：8.8</text>
+                  </view>
+                </view>
+              </view>
+          </navigator>
         </view>
 
       </view>

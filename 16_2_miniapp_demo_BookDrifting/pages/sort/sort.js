@@ -65,28 +65,6 @@ Page({
   },
 
   onLoad:function (options) {
-      // var that=this;
-      // that.setData({
-      //     toRe : star.toRefresh()
-      // });
-      // console.log("加载");
-      // console.log(that.data.toRe);
-
-      // request.getBookList(that.data.toRe,"",function(res){
-      //     var types = res.data.books;
-      //     //这里可能和变量类型有关，变量貌似分值类型和引用类型
-      //     for (var i = 0; i < types.length; ++i) {
-      //         var book = types[i];
-      //         var rating = book.rating;
-      //         rating.block = star.get_star(rating.average);
-      //     }
-      //     res.data.books = types;
-      //     console.log(res.data.books);
-      //     if(res.data.count==0){
-      //         return;
-      //     }
-      //     that.setData({bookList:res.data.books,count:that.data.count+res.data.count});
-      // });
     
   },
   upper: function(e) {
@@ -125,7 +103,7 @@ Page({
   
 
   lower: function(e) {
-    console.log("已到低部");
+    console.log("已到底部");
     var that=this;
     wx.showToast({
       title: '加载中',
