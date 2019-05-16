@@ -1,0 +1,159 @@
+/* pages/comment/comment.wxss */
+@import '../../src/weui.wxss';
+.userinfo-avatar{
+  flex:1;
+  display:inline-block;
+  width:100rpx;
+  height:100rpx;
+  border-radius:80rpx
+}
+.userinfo-nickname{
+  padding: 8rpx 0 10rpx 0;
+  font-size: 45rpx;
+  color:#242424;
+  
+  opacity: 0.9;
+  text-align: center;
+  justify-content:center;
+  margin-left: 50rpx;
+}
+.userinfo-vice-nickname{
+  padding: 8rpx 0 10rpx 0;
+  font-size: 30rpx;
+  color: #818A8F;
+  text-align: center;
+  justify-content:center;
+  margin-left: 50rpx;
+}
+.music{
+  width: 750rpx;
+  background: #ffffff;
+  padding: 0;
+  display: flex;
+}
+
+.comment-content{
+  flex:3;
+  margin-top:25rpx;
+  margin-left:1rpx;
+  margin-right: 15rpx;
+  color: 	#3B3B3B;
+  border-bottom: solid 2rpx #ebebeb;
+}
+.former-music{
+  flex: 0.3;
+}
+.music-item{
+  flex: 1.5;
+  text-align: left;
+  color: #6d6d6d;
+  line-height: 60rpx;
+  padding: 30rpx 0;
+  border-bottom: solid 1px #ebebeb;
+  margin-left:0;
+  padding-left:0;
+}
+.user-name{
+  vertical-align: middle;
+  padding-left: 0;
+  margin-right: 5rpx;
+  font-size:28rpx;
+}
+.love-item{
+  flex: 0.4;
+  text-align: center;
+  height:60rpx; 
+  padding:20rpx
+}
+.likeNum{
+  padding-top: 25rpx;
+}
+
+.bottom-all{
+  display:flex;
+  position:relative;
+  flex-direction:row;
+  padding-top:0rpx;
+    padding-bottom: 0rpx;
+    margin-top:0rpx;
+    margin-bottom: 0rpx;
+    font-size:40rpx;
+    
+}
+ .search-header{
+  position:relative;
+  flex:auto;
+  background:#fff;
+  padding:0rpx;
+}
+
+.input-box{
+    margin-left: 30rpx;
+    position:relative;
+    padding-left:60rpx;
+    padding-right:10rpx;
+    width:90%;
+    height:100%;
+    box-sizing:border-box;
+    z-index:1;
+    background-color:#F5F5F5;
+}
+
+.input-box-icon{
+ position:absolute;
+ left:20rpx;top:14rpx;
+ size:160rpx;
+}
+
+.del{
+    position:absolute;
+    top:0;
+    right:0;
+    padding:14rpx 16rpx;
+    font-size:0
+}
+
+.keywrod{
+    height:56rpx;
+    line-height:56rpx;
+    font-size:1ch;
+    font-family: 'YouYuan';
+    margin-top:15rpx;
+    margin-bottom: 15rpx;
+}
+
+.right{
+    margin-top: 27rpx;
+    margin-bottom:33rpx;
+    margin-left: 3rpx;
+    margin-right: 20rpx;
+    width: 58rpx;
+    height: 43rpx;
+    line-height: 43rpx;
+    float: right;
+    flex:2;
+    font-family:'YouYuan';
+    font-size:45rpx;
+    color:	#696969;
+}
+
+.label-all{
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:2;
+  border-radius:6rpx;
+  text-align:center;
+  color:#9b9b9b;
+  background:#fff;
+  line-height:40rpx;
+
+}
+.label-text{
+  display:inline-block;
+  font-size:40rpx;
+  vertical-align:middle;
+  margin:10rpx;
+}
